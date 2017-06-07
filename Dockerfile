@@ -3,7 +3,7 @@
 #   bsarda <b.sarda@free.fr>
 #
 FROM centos:centos7.2.1511
-MAINTAINER Benoit Sarda <b.sarda@free.fr>
+LABEL maintainer "b.sarda@free.fr"
 
 # install packages
 RUN rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-$(uname -r | sed 's/.*el\([0-9]\).*/\1/g').noarch.rpm && \
